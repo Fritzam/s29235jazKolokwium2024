@@ -15,4 +15,8 @@ public class NBPService {
         return restTemplate.getForEntity(STR."http://api.nbp.pl/api/exchangerates/rates/a/" + currency + "/" +
                 dateA + "/" + dateB + "/?format=json", ExchangeRates.class).getBody();
     }
+
+    public double getAveragePrice() {
+        return 0;
+    }
 }
