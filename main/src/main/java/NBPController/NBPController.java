@@ -25,4 +25,9 @@ public class NBPController {
     public ResponseEntity<ExchangeRates> getNBPresult(@PathVariable String currency, @PathVariable String dateA, @PathVariable String dateB) {
         return ResponseEntity.ok(service.getRates(currency, dateA, dateB));
     }
+
+    @GetMapping("/Test")
+    public ResponseEntity<String> test() {
+        return ResponseEntity.ok("Działa");
+    }
 }
